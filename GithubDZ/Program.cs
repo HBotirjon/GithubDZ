@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GithubDZ
 {
@@ -11,9 +8,12 @@ namespace GithubDZ
         static void Main(string[] args)
         {
             int[] numbers = { 1, 2, 3, 4, 5 };
-            int sum = numbers.Sum();
-
-            Console.WriteLine("Сумма элементов массива: " + sum);
+            int sum = CalculateSum(numbers);
+            Console.WriteLine($"Сумма элементов массива: {sum}");
+        }
+        static int CalculateSum(int[] arr)
+        {
+            return arr.Sum();
         }
     }
 }
